@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    .gamecontainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #111;
+        flex-direction: column;
+    }
+    .score{
+        font-size: 100px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        color: white;
+    }
+
+    button{
+        font-size: 50px;
+        font-weight: bold;
+        width: 300px;
+        height: 100px;
+    }
+</style>
+<body>
+    <div class="gamecontainer">
+        <canvas class="gameboard"></canvas>
+         <span class="score">0</span>
+    <button id="resetbtn">reset</button>
+    </div>
+
+   <script src="ParticelSystem.js"></script>
+
+</body>
+</html>
